@@ -1,0 +1,10 @@
+streamlit==1.32.0
+pandas==2.2.1
+google-cloud-aiplatform==1.44.0
+requests==2.31.0
+python-dotenv
+langgraph
+langchain-core
+langchain-nvidia-ai-endpoints
+torch
+torchvision
