@@ -9,6 +9,8 @@
 | Version | What Changed |
 |---|---|
 | **v3.0.0** | Real agent pipeline — grounded LLM prompts from live BQ data, BigQuery acceleration benchmark, structured folder layout |
+
+**Live:** https://supplychain-sync-629747631357.us-central1.run.app
 | **v2.0.0** | Full dashboard UI redesign — command centre layout, Plotly charts, tabbed results, sidebar controls |
 | **v1.0.0** | Initial release — LangGraph pipeline, NVIDIA NIM + Gemini integration |
 
@@ -218,8 +220,8 @@ gcloud builds submit --tag gcr.io/supplychain-sync-hackathon/supplychain-sync
 gcloud run deploy supplychain-sync \
   --image gcr.io/supplychain-sync-hackathon/supplychain-sync \
   --platform managed --region us-central1 \
-  --allow-unauthenticated --memory 2Gi --cpu 2 --timeout 300 \
-  --set-secrets NVIDIA_API_KEY=NVIDIA_API_KEY:latest
+  --allow-unauthenticated --memory 4Gi --cpu 2 --timeout 300 \
+  --set-secrets=NVIDIA_API_KEY=NVIDIA_API_KEY:latest
 ```
 
 ---
